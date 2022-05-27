@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/TikTok-Camp-A/static/css/main.8391e077.css",
-    "main.js": "/TikTok-Camp-A/static/js/main.c7b3f85b.js",
+    "main.js": "/TikTok-Camp-A/static/js/main.af5784d6.js",
     "index.html": "/TikTok-Camp-A/index.html",
     "main.8391e077.css.map": "/TikTok-Camp-A/static/css/main.8391e077.css.map",
-    "main.c7b3f85b.js.map": "/TikTok-Camp-A/static/js/main.c7b3f85b.js.map"
+    "main.af5784d6.js.map": "/TikTok-Camp-A/static/js/main.af5784d6.js.map"
   },
   "entrypoints": [
     "static/css/main.8391e077.css",
-    "static/js/main.c7b3f85b.js"
+    "static/js/main.af5784d6.js"
   ]
 }
