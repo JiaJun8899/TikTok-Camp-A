@@ -12,7 +12,7 @@ import './App.css'
 const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 const cate = ["Countries", "Coding Langauge", "Drinks"];
 const wordList = [["Singapore", "China", "England"],["Java", "Python", "HTML"],["COKE", "SPRITE", "PEPSI"]];
-const chosenCategory = Math.floor(Math.random() * cate.length);
+let chosenCategory = Math.floor(Math.random() * cate.length);
 let WORD = wordList[chosenCategory][Math.floor(Math.random() * cate.length)].toUpperCase();
 
 function App() {
@@ -25,6 +25,7 @@ function App() {
 		setPlayable(true)
 		setCorrectLetters([])
 		setWrongLetters([])
+		chosenCategory = Math.floor(Math.random() * cate.length);
 		WORD = wordList[chosenCategory][Math.floor(Math.random() * cate.length)].toUpperCase();
 	}
 	
