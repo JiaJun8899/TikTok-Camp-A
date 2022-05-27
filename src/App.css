@@ -1,38 +1,97 @@
-.App {
+body, #root{
+  font-family: 'Open Sans', sans-serif;
+  color: #212121;
+  background-color: #aeb0b5;
+}
+h1{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.figure-svg{
+  display: block;
+  margin: auto;
+  border: 1px #000000 solid;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrongletters-container{
+  font-size: 15px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.wrongletters-container p{
+  font-weight: bold;
+}
+.information-container{
+  text-align: center;
+}
+.information-container p{
+  font-size: 20px;
+  font-weight: bold;
+}
+.letter{
+  display: inline-block;
+  font-size: 25px;
+  margin: auto;
+  padding: 10px;
+}
+.alphabet-btn {
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  padding: 10px 10px;
+}
+.popup-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.popup {
+  background: #02bfe7;
+  border-radius: 5px;
+  box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+.popup button {
+  cursor: pointer;
+  background-color: #02bfe7;
+  color: #212121;
+  border: 0;
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.popup button:active {
+  transform: scale(0.98);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.popup button:focus {
+  outline: 0;
+}
+
+.notification-container {
+  background-color: #cd2026 ;
+  border-radius: 10px 10px 10px 10px;
+  padding: 10px 10px;
+  margin-bottom: 15px;
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+.notification-container p {
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.notification-container.show {
+  visibility:visible;
+  opacity:1;
 }
